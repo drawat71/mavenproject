@@ -1,0 +1,27 @@
+package testjava;
+
+import java.util.Set;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LEARNJAVA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("test");
+		
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\drawat2\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		
+		WebDriver driver =new ChromeDriver();
+	  driver.get("https:google.com");
+	  driver.get("https:miscrosoft.com");
+	 Set<String> window =driver.getWindowHandles();
+	  System.out.println(window);
+	
+	
+	}
+
+}

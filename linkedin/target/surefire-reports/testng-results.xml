@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="316778" started-at="2018-07-07T18:28:35Z" finished-at="2018-07-07T18:33:52Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="316778" started-at="2018-07-07T18:28:35Z" finished-at="2018-07-07T18:33:52Z">
+      <class name="mavenlink.linkedin.homepage">
+        <test-method status="PASS" signature="basepagenavigation(java.lang.String, java.lang.String)[pri:0, instance:mavenlink.linkedin.homepage@13969fbe]" name="basepagenavigation" duration-ms="316687" started-at="2018-07-07T23:58:35Z" data-provider="getdata" finished-at="2018-07-08T00:03:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[it.jjayashree@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1transaction]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basepagenavigation -->
+      </class> <!-- mavenlink.linkedin.homepage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,63 @@
+package testjava;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+public class learn {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+	System.out.println("test");
+	
+	System.setProperty("webdriver.chrome.driver",
+			"C:\\Users\\drawat2\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	
+	WebDriver driver =new ChromeDriver();
+  driver.get("https:google.com");
+  String title = driver.getTitle();
+  System.out.println(title);
+  
+  try
+  {
+  Assert.assertEquals(title, "Google1");
+  }
+  catch(Exception e)
+  {
+	  System.out.println(e); 
+  }
+   
+  //Assert.assertTrue(title);
+	
+	
+	//Take Screenshot
+	File Scr=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+   FileUtils.copyFile(Scr,new File("C:\\Users\\drawat2\\Downloads\\Screenshot.png"));
+	
+   //Explicit wait
+	WebDriverWait wait = new WebDriverWait(driver,5);
+	wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("dsfsdf")))); //or visibilityof element locatated(eleet)
+	
+	//implicit wait
+	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	
+	//find elment if displayed
+	/*test.isDisplayed();
+	test.isEnabled();
+	if(!test.isSelected()); //if not displayed
+*/	
+
+}}

@@ -1,0 +1,45 @@
+package testjava;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import javax.swing.text.Document;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.sun.jna.platform.win32.WinDef.CHAR;
+
+public class LEARNJAVA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*String S1 = "Monday";
+		String S2= "Tuesday";
+		char[] S1new=S1.toCharArray();
+		 char[] s2new= S2.toCharArray();
+		 
+		 for(int i=0;i<S1new.length ;i++)
+		 {
+          for (int j=0 ;j<s2new.length;j++)
+          {
+        	  if(S1new[i]==s2new[j])
+        	  {
+        		  System.out.println(S1new[i]);*/
+        	  
+		
+
+
+
+		// TODO Auto-generated method stub
+		String s="Dishant";
+		char[] c=s.toCharArray();
+		for(int i=c.length-1;i >= 0;i--){
+			System.out.println(c[i]+c[i]);
+		}
+		}
+		
+          
+}
